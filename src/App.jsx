@@ -7,12 +7,10 @@ function App() {
 	return (
 		<>
 			<NavBar />
-			<div>
-				<Routes>
-					<Route path="/" element={<Home />} />
-					<Route path="/shop" element={<Shop />} />
-				</Routes>
-			</div>
+			<Routes>
+				<Route path="/" element={<Home />} />
+				<Route path="/shop" element={<Shop />} />
+			</Routes>
 		</>
 	);
 }

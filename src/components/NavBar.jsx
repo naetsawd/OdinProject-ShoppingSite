@@ -1,13 +1,28 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import "../styles/navbar.css";
+import siteLogo from "../assets/siteLogo.png";
 
 function Navbar() {
 	return (
-		<>
-			<Link to="/">Home</Link>
-			<Link to="shop">Shop</Link>
-		</>
+		<nav className="navbar">
+			<Link to="/" className="site-logo">
+				<img src={siteLogo}></img>
+				<h1>JewelQuest</h1>
+			</Link>
+
+			<ul className="nav-links">
+				<li>
+					<Link to="shop">Shop</Link>
+				</li>
+				<li>
+					<Link to="#">About</Link>
+				</li>
+				<li>
+					<Link to="#">Contact</Link>
+				</li>
+			</ul>
+		</nav>
 	);
 }
 
