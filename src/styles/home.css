@@ -1,19 +1,58 @@
 .hero {
 	position: relative;
-	width: 100vw;
-	height: 100vh;
-	overflow: hidden;
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	width: 100vw;
+	height: 100vh;
+	overflow: hidden;
 }
 
-.carousel {
+.hero-welcome {
+	position: absolute;
+	text-align: center;
+	z-index: 1;
+	top: 40%;
+}
+
+.hero-welcome h1 {
+	color: white;
+	font-size: 3rem;
+	font-weight: 600;
+	margin-bottom: 1.2rem;
+	text-shadow: 0px 0px 8px rgba(0, 0, 0, 0.6);
+}
+
+.hero-welcome a {
+    display: inline-block;
+    text-decoration: none;
+    padding: 0.8rem 1rem;
+	font-family: "Roboto", sans-serif;
+	font-size: 1rem;
+	text-transform: uppercase;
+	letter-spacing: 0.15rem;
+	font-weight: 500;
+	color: black;
+	background-color: white;
+	border-radius: 3rem;
+	box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+	transition: all 0.3s ease 0s;
+	cursor: pointer;
+}
+
+.hero-welcome a:hover {
+	background-color: #2ee59d;
+	box-shadow: 0px 10px 20px rgba(46, 229, 157, 0.4);
+	color: white;
+	transform: translateY(-7px);
+}
+
+.hero-carousel {
 	display: flex;
 	transition: transform 1s ease;
 }
 
-.carousel img {
+.hero-carousel img {
 	max-width: 100%;
 	max-height: 100%;
 	object-fit: contain;

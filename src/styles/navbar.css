@@ -1,31 +1,32 @@
 .navbar {
-    position: fixed;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    padding: 1rem 6rem;
-    background-color: rgba(0, 0, 0, 0.5);
-    backdrop-filter: blur(0.4rem);
-    box-shadow: 0px 15px 10px -3px rgba(0,0,0,0.1);
-    z-index: 1;
+	position: fixed;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 100%;
+	padding: 0.2rem 6rem;
+	background-color: rgba(0, 0, 0, 0.6);
+	backdrop-filter: blur(0.4rem);
+	box-shadow: 0px 10px 10px -3px rgba(0, 0, 0, 0.2);
+	z-index: 1;
 }
 
 .site-logo {
 	display: flex;
-    justify-content: space-between;
-    align-items: center;
-    text-decoration: none;
+	justify-content: space-between;
+	align-items: center;
+	text-decoration: none;
 }
 
 .site-logo img {
-	width: 3rem;
-    margin-right: 0.6rem;
+	width: 4.2rem;
+	margin-right: 0.6rem;
 }
 
 .site-logo h1 {
-    color: white;
-    font-size: 2rem;
+	color: white;
+	font-size: 2rem;
+    font-weight: 600;
 }
 
 .nav-links {
@@ -35,11 +36,11 @@
 }
 
 .nav-links li {
-    margin-left: 3rem;
+	margin-left: 3rem;
 }
 
 .nav-links a {
-    font-size: 1.2rem;
+	font-size: 1.2rem;
 	font-weight: 400;
 	color: white;
 	text-decoration: none;

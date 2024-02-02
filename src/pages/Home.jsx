@@ -1,14 +1,16 @@
 import { useState, useEffect, useRef } from "react";
+import { Link } from "react-router-dom";
 import "../styles/home.css";
 import img1 from "../assets/carousel1.jpg";
 import img2 from "../assets/carousel2.jpg";
 import img3 from "../assets/carousel3.jpg";
 import img4 from "../assets/carousel4.jpg";
+import img5 from "../assets/carousel5.jpg";
 
 function Home() {
 	const [currentImageIndex, setCurrentImageIndex] = useState(0);
-	const images = [img1, img2, img3, img4];
-	const delay = 5000;
+	const images = [img1, img2, img3, img4, img5];
+	const delay = 4500;
 	const carouselRef = useRef(null);
 
 	useEffect(() => {
@@ -36,8 +38,13 @@ function Home() {
 	return (
 		<>
 			<div className="hero">
+				<div className="hero-welcome">
+					<h1>Welcome to JewelQuest!</h1>
+					<Link to="shop">Shop Now</Link>
+				</div>
+
 				<div
-					className="carousel"
+					className="hero-carousel"
 					ref={carouselRef}
 					style={{ transform: `translateX(-${currentImageIndex * 100}%)` }}
 				>
