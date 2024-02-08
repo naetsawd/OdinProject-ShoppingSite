@@ -39,7 +39,7 @@ function Home() {
 		<>
 			<div className="hero">
 				<div className="hero-welcome">
-					<h1>Welcome to JewelQuest!</h1>
+					<h2>Welcome to JewelQuest!</h2>
 					<Link to="shop">Shop Now</Link>
 				</div>
 
